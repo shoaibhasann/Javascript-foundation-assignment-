@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <h1>Banking Application</h1>
+        <div id="user-details">
+            <div id="name"><span>Username:</span><span id="username"></span></div>
+            <div id="balance"><span>Account Balance:</span><span id="userbalance"></span></div>
+            <div id="transaction-details">
+               <select name="transaction" id="transaction">
+                <option value="Deposit">Deposit</option>
+                <option value="Withdrawl">Withdrawl</option>
+               </select>
+               <input type="text" name="transaction-value" id="transaction-value">
+            </div>
+            <button id="update" onclick="updateAccount()">Update your Account</button>
+        </div>
+    
+ <script src="./banking.js"></script>   
+</body>
+</html>
